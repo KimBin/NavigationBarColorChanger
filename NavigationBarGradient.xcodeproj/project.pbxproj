@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500BDEEB1CA53C6700913710 /* UINavigationBar+AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 500BDEEA1CA53C6700913710 /* UINavigationBar+AssociatedObjects.m */; };
 		501EF96A1CA3892700CE291A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF9691CA3892700CE291A /* main.m */; };
 		501EF96D1CA3892700CE291A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF96C1CA3892700CE291A /* AppDelegate.m */; };
-		501EF9701CA3892700CE291A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF96F1CA3892700CE291A /* ViewController.m */; };
 		501EF9731CA3892700CE291A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501EF9711CA3892700CE291A /* Main.storyboard */; };
-		501EF9751CA3892700CE291A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501EF9741CA3892700CE291A /* Assets.xcassets */; };
 		501EF9781CA3892700CE291A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501EF9761CA3892700CE291A /* LaunchScreen.storyboard */; };
 		501EF9831CA3892700CE291A /* NavigationBarGradientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF9821CA3892700CE291A /* NavigationBarGradientTests.m */; };
-		501EF98E1CA3892700CE291A /* NavigationBarGradientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF98D1CA3892700CE291A /* NavigationBarGradientUITests.m */; };
+		501EF9AA1CA38A0B00CE291A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF9A31CA38A0B00CE291A /* FirstViewController.m */; };
+		501EF9AB1CA38A0B00CE291A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF9A51CA38A0B00CE291A /* SecondViewController.m */; };
+		501EF9AC1CA38A0B00CE291A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF9A71CA38A0B00CE291A /* ViewController.m */; };
+		501EF9B21CA38B2C00CE291A /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF9B11CA38B2C00CE291A /* TopView.m */; };
+		501EF9B81CA391B300CE291A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501EF9B71CA391B300CE291A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,32 +28,32 @@
 			remoteGlobalIDString = 501EF9641CA3892700CE291A;
 			remoteInfo = NavigationBarGradient;
 		};
-		501EF98A1CA3892700CE291A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 501EF95D1CA3892700CE291A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 501EF9641CA3892700CE291A;
-			remoteInfo = NavigationBarGradient;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		500BDEE91CA53C6700913710 /* UINavigationBar+AssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+AssociatedObjects.h"; sourceTree = "<group>"; };
+		500BDEEA1CA53C6700913710 /* UINavigationBar+AssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+AssociatedObjects.m"; sourceTree = "<group>"; };
 		501EF9651CA3892700CE291A /* NavigationBarGradient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationBarGradient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501EF9691CA3892700CE291A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		501EF96B1CA3892700CE291A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		501EF96C1CA3892700CE291A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		501EF96E1CA3892700CE291A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		501EF96F1CA3892700CE291A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		501EF9721CA3892700CE291A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		501EF9741CA3892700CE291A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		501EF9771CA3892700CE291A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		501EF9791CA3892700CE291A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		501EF97E1CA3892700CE291A /* NavigationBarGradientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationBarGradientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		501EF9821CA3892700CE291A /* NavigationBarGradientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarGradientTests.m; sourceTree = "<group>"; };
 		501EF9841CA3892700CE291A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		501EF9891CA3892700CE291A /* NavigationBarGradientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationBarGradientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		501EF98D1CA3892700CE291A /* NavigationBarGradientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarGradientUITests.m; sourceTree = "<group>"; };
 		501EF98F1CA3892700CE291A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		501EF9A21CA38A0B00CE291A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		501EF9A31CA38A0B00CE291A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		501EF9A41CA38A0B00CE291A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		501EF9A51CA38A0B00CE291A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		501EF9A61CA38A0B00CE291A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		501EF9A71CA38A0B00CE291A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		501EF9B01CA38B2C00CE291A /* TopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
+		501EF9B11CA38B2C00CE291A /* TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
+		501EF9B71CA391B300CE291A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +65,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		501EF97B1CA3892700CE291A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		501EF9861CA3892700CE291A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,7 +89,6 @@
 			children = (
 				501EF9651CA3892700CE291A /* NavigationBarGradient.app */,
 				501EF97E1CA3892700CE291A /* NavigationBarGradientTests.xctest */,
-				501EF9891CA3892700CE291A /* NavigationBarGradientUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,12 +98,14 @@
 			children = (
 				501EF96B1CA3892700CE291A /* AppDelegate.h */,
 				501EF96C1CA3892700CE291A /* AppDelegate.m */,
-				501EF96E1CA3892700CE291A /* ViewController.h */,
-				501EF96F1CA3892700CE291A /* ViewController.m */,
+				501EF9B91CA3C42E00CE291A /* Common */,
+				501EF9A11CA38A0B00CE291A /* Controller */,
+				501EF9A81CA38A0B00CE291A /* Model */,
+				501EF9A91CA38A0B00CE291A /* View */,
 				501EF9711CA3892700CE291A /* Main.storyboard */,
-				501EF9741CA3892700CE291A /* Assets.xcassets */,
 				501EF9761CA3892700CE291A /* LaunchScreen.storyboard */,
 				501EF9791CA3892700CE291A /* Info.plist */,
+				501EF9B71CA391B300CE291A /* Assets.xcassets */,
 				501EF9681CA3892700CE291A /* Supporting Files */,
 			);
 			path = NavigationBarGradient;
@@ -138,6 +135,44 @@
 				501EF98F1CA3892700CE291A /* Info.plist */,
 			);
 			path = NavigationBarGradientUITests;
+			sourceTree = "<group>";
+		};
+		501EF9A11CA38A0B00CE291A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				501EF9A21CA38A0B00CE291A /* FirstViewController.h */,
+				501EF9A31CA38A0B00CE291A /* FirstViewController.m */,
+				501EF9A41CA38A0B00CE291A /* SecondViewController.h */,
+				501EF9A51CA38A0B00CE291A /* SecondViewController.m */,
+				501EF9A61CA38A0B00CE291A /* ViewController.h */,
+				501EF9A71CA38A0B00CE291A /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		501EF9A81CA38A0B00CE291A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		501EF9A91CA38A0B00CE291A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				501EF9B01CA38B2C00CE291A /* TopView.h */,
+				501EF9B11CA38B2C00CE291A /* TopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		501EF9B91CA3C42E00CE291A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				500BDEE91CA53C6700913710 /* UINavigationBar+AssociatedObjects.h */,
+				500BDEEA1CA53C6700913710 /* UINavigationBar+AssociatedObjects.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,24 +213,6 @@
 			productReference = 501EF97E1CA3892700CE291A /* NavigationBarGradientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		501EF9881CA3892700CE291A /* NavigationBarGradientUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 501EF9981CA3892700CE291A /* Build configuration list for PBXNativeTarget "NavigationBarGradientUITests" */;
-			buildPhases = (
-				501EF9851CA3892700CE291A /* Sources */,
-				501EF9861CA3892700CE291A /* Frameworks */,
-				501EF9871CA3892700CE291A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				501EF98B1CA3892700CE291A /* PBXTargetDependency */,
-			);
-			name = NavigationBarGradientUITests;
-			productName = NavigationBarGradientUITests;
-			productReference = 501EF9891CA3892700CE291A /* NavigationBarGradientUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,10 +226,6 @@
 						CreatedOnToolsVersion = 7.2;
 					};
 					501EF97D1CA3892700CE291A = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 501EF9641CA3892700CE291A;
-					};
-					501EF9881CA3892700CE291A = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 501EF9641CA3892700CE291A;
 					};
@@ -233,7 +246,6 @@
 			targets = (
 				501EF9641CA3892700CE291A /* NavigationBarGradient */,
 				501EF97D1CA3892700CE291A /* NavigationBarGradientTests */,
-				501EF9881CA3892700CE291A /* NavigationBarGradientUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,19 +256,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				501EF9781CA3892700CE291A /* LaunchScreen.storyboard in Resources */,
-				501EF9751CA3892700CE291A /* Assets.xcassets in Resources */,
+				501EF9B81CA391B300CE291A /* Assets.xcassets in Resources */,
 				501EF9731CA3892700CE291A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		501EF97C1CA3892700CE291A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		501EF9871CA3892700CE291A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,8 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501EF9701CA3892700CE291A /* ViewController.m in Sources */,
+				501EF9B21CA38B2C00CE291A /* TopView.m in Sources */,
+				501EF9AA1CA38A0B00CE291A /* FirstViewController.m in Sources */,
+				501EF9AC1CA38A0B00CE291A /* ViewController.m in Sources */,
+				501EF9AB1CA38A0B00CE291A /* SecondViewController.m in Sources */,
 				501EF96D1CA3892700CE291A /* AppDelegate.m in Sources */,
+				500BDEEB1CA53C6700913710 /* UINavigationBar+AssociatedObjects.m in Sources */,
 				501EF96A1CA3892700CE291A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,14 +293,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		501EF9851CA3892700CE291A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				501EF98E1CA3892700CE291A /* NavigationBarGradientUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,11 +300,6 @@
 			isa = PBXTargetDependency;
 			target = 501EF9641CA3892700CE291A /* NavigationBarGradient */;
 			targetProxy = 501EF97F1CA3892700CE291A /* PBXContainerItemProxy */;
-		};
-		501EF98B1CA3892700CE291A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 501EF9641CA3892700CE291A /* NavigationBarGradient */;
-			targetProxy = 501EF98A1CA3892700CE291A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,8 +407,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NavigationBarGradient",
+				);
 				INFOPLIST_FILE = NavigationBarGradient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NavigationBarGradient/Common",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NavigationBarGradient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -422,8 +427,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NavigationBarGradient",
+				);
 				INFOPLIST_FILE = NavigationBarGradient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NavigationBarGradient/Common",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NavigationBarGradient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -453,30 +467,6 @@
 			};
 			name = Release;
 		};
-		501EF9991CA3892700CE291A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NavigationBarGradientUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NavigationBarGradientUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = NavigationBarGradient;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		501EF99A1CA3892700CE291A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NavigationBarGradientUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NavigationBarGradientUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = NavigationBarGradient;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +486,7 @@
 				501EF9941CA3892700CE291A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		501EF9951CA3892700CE291A /* Build configuration list for PBXNativeTarget "NavigationBarGradientTests" */ = {
 			isa = XCConfigurationList;
@@ -504,14 +495,7 @@
 				501EF9971CA3892700CE291A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		501EF9981CA3892700CE291A /* Build configuration list for PBXNativeTarget "NavigationBarGradientUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				501EF9991CA3892700CE291A /* Debug */,
-				501EF99A1CA3892700CE291A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

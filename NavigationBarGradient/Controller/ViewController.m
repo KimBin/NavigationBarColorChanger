@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "FirstViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Hello";
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    FirstViewController *firstVC = [[FirstViewController alloc] init];
+//    firstVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:firstVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
