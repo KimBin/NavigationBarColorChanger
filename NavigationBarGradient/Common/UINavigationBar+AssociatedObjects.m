@@ -39,6 +39,7 @@ static char keyTopView;
 {
     [self.topView removeFromSuperview];
     self.topView = nil;
+
 }
 
 @end

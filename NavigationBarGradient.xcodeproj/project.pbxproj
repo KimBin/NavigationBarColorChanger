@@ -18,6 +18,8 @@
 		501EF9AC1CA38A0B00CE291A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF9A71CA38A0B00CE291A /* ViewController.m */; };
 		501EF9B21CA38B2C00CE291A /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501EF9B11CA38B2C00CE291A /* TopView.m */; };
 		501EF9B81CA391B300CE291A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501EF9B71CA391B300CE291A /* Assets.xcassets */; };
+		50E8F90D1CA8D5C300CA99BB /* action-black-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E8F90C1CA8D5C300CA99BB /* action-black-button@2x.png */; };
+		50E8F9101CA8D64F00CA99BB /* XJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E8F90F1CA8D64F00CA99BB /* XJNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		501EF9B01CA38B2C00CE291A /* TopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
 		501EF9B11CA38B2C00CE291A /* TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
 		501EF9B71CA391B300CE291A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50E8F90C1CA8D5C300CA99BB /* action-black-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-black-button@2x.png"; sourceTree = "<group>"; };
+		50E8F90E1CA8D64F00CA99BB /* XJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJNavigationController.h; sourceTree = "<group>"; };
+		50E8F90F1CA8D64F00CA99BB /* XJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,7 @@
 			children = (
 				501EF96B1CA3892700CE291A /* AppDelegate.h */,
 				501EF96C1CA3892700CE291A /* AppDelegate.m */,
+				50E8F90C1CA8D5C300CA99BB /* action-black-button@2x.png */,
 				501EF9B91CA3C42E00CE291A /* Common */,
 				501EF9A11CA38A0B00CE291A /* Controller */,
 				501EF9A81CA38A0B00CE291A /* Model */,
@@ -142,6 +148,8 @@
 			children = (
 				501EF9A21CA38A0B00CE291A /* FirstViewController.h */,
 				501EF9A31CA38A0B00CE291A /* FirstViewController.m */,
+				50E8F90E1CA8D64F00CA99BB /* XJNavigationController.h */,
+				50E8F90F1CA8D64F00CA99BB /* XJNavigationController.m */,
 				501EF9A41CA38A0B00CE291A /* SecondViewController.h */,
 				501EF9A51CA38A0B00CE291A /* SecondViewController.m */,
 				501EF9A61CA38A0B00CE291A /* ViewController.h */,
@@ -255,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E8F90D1CA8D5C300CA99BB /* action-black-button@2x.png in Resources */,
 				501EF9781CA3892700CE291A /* LaunchScreen.storyboard in Resources */,
 				501EF9B81CA391B300CE291A /* Assets.xcassets in Resources */,
 				501EF9731CA3892700CE291A /* Main.storyboard in Resources */,
@@ -276,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				501EF9B21CA38B2C00CE291A /* TopView.m in Sources */,
+				50E8F9101CA8D64F00CA99BB /* XJNavigationController.m in Sources */,
 				501EF9AA1CA38A0B00CE291A /* FirstViewController.m in Sources */,
 				501EF9AC1CA38A0B00CE291A /* ViewController.m in Sources */,
 				501EF9AB1CA38A0B00CE291A /* SecondViewController.m in Sources */,

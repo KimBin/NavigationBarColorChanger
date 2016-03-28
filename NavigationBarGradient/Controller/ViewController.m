@@ -16,14 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Hello";
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Hello";    
 }
+
+
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     FirstViewController *firstVC = [[FirstViewController alloc] init];
-//    firstVC.hidesBottomBarWhenPushed = YES;
+    firstVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:firstVC animated:YES];
 }
 

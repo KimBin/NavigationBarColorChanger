@@ -51,34 +51,41 @@ static NSString * const cellID = @"cellID";
 @implementation FirstViewController
 {
     CGFloat _contenOffsetY; // 记录之前偏移量
+    UIImage *_image; // 取得navi下面的黑线(如不需要可以去除)
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:YES];
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.translucent = YES;
+//    - (nullable UIImage *)backgroundImageForBarMetrics:(UIBarMetrics)barMetrics NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
+   _image = [self.navigationController.navigationBar backgroundImageForBarMetrics:(UIBarMetricsDefault)];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     self.mainTableView.delegate = self;
     [self scrollViewDidScroll:self.mainTableView];
-    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.translucent = NO;
+    
     self.mainTableView.delegate = nil;
     [self.navigationController.navigationBar xj_removeOneView];
+    [self.navigationController.navigationBar setBackgroundImage:_image forBarMetrics:(UIBarMetricsDefault)];
+
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    [self.navigationController.navigationBar xj_setBackgroundColor:[UIColor clearColor]];
     [self createMainTableView];
 }
 
 - (void)createMainTableView
 {
     self.mainTableView = [[UITableView alloc]initWithFrame:self.view.bounds style:(UITableViewStyleGrouped)];
-    self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
     self.mainTableView.backgroundColor = [UIColor whiteColor];
     self.mainTableView.contentInset = UIEdgeInsetsMake(headTop, 0, 0, 0);
