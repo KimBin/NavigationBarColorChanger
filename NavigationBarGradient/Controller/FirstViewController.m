@@ -58,8 +58,6 @@ static NSString * const cellID = @"cellID";
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.translucent = YES;
-//    - (nullable UIImage *)backgroundImageForBarMetrics:(UIBarMetrics)barMetrics NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-   _image = [self.navigationController.navigationBar backgroundImageForBarMetrics:(UIBarMetricsDefault)];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     self.mainTableView.delegate = self;
     [self scrollViewDidScroll:self.mainTableView];
@@ -79,6 +77,7 @@ static NSString * const cellID = @"cellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _image = [self.navigationController.navigationBar backgroundImageForBarMetrics:(UIBarMetricsDefault)];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self createMainTableView];
 }
