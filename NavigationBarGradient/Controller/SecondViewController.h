@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewController : UIViewController
-
+/**
+ *  点击按钮后添加本地通知
+ */
+- (void)addLocalNote;
+/**
+ *  移除通知(不常用)
+ */
+- (void)removeLocalNote;
 @end

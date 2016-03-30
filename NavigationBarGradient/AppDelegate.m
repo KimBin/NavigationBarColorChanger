@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "XJNavigationController.h"
-@interface AppDelegate ()
+@interface AppDelegate ()<UIAlertViewDelegate>
 
 @end
 
@@ -22,8 +22,72 @@
     
     XJNavigationController *navi = [[XJNavigationController alloc]initWithRootViewController:[[ViewController alloc] init]];
     self.window.rootViewController = navi;
+
+    /*
+     UIUserNotificationTypeNone    = 0,      无类型(不给用户发通知)
+     UIUserNotificationTypeBadge   = 1 << 0, 是否可以改变应用图标右上角的提示数字
+     UIUserNotificationTypeSound   = 1 << 1, 该通知是否会有声音
+     UIUserNotificationTypeAlert   = 1 << 2, 是否有弹出提示
+     */
+    if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound categories:nil];
+        [application registerUserNotificationSettings:settings];
+    }
     
+    if (launchOptions[UIApplicationLaunchOptionsLocalNotificationKey]) {
+        // 跳转
+        UILabel *label = [[UILabel alloc] init];
+        label.frame = CGRectMake(0, 300, 300, 300);
+        label.backgroundColor = [UIColor redColor];
+        label.text = [NSString stringWithFormat:@"%@", launchOptions];
+        label.font = [UIFont systemFontOfSize:14];
+        label.numberOfLines = 0;
+        [self.window.rootViewController.view addSubview:label];
+    }
     [self.window makeKeyAndVisible];
+    return YES;
+}
+
+/**
+ *  点击通知打开应用的时候会执行该方法
+ *  应用在前台的时候,收到通知也会执行该方法
+ *
+ *  @param notification 通知
+ */
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    NSLog(@"noti:%@",notification);
+    
+    // 这里真实需要处理交互的地方
+    // 获取通知所带的数据
+    NSString *notMess = [notification.userInfo objectForKey:@"msg"];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"本地通知(前台)"
+                                                    message:notMess
+                                                   delegate:self
+                                          cancelButtonTitle:@"取消"
+                                          otherButtonTitles:@"OK", nil];
+    [alert show];
+    
+    // 更新显示的徽章个数
+    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    badge--;
+    badge = badge >= 0 ? badge : 0;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+    
+    // 在不需要再推送时，可以取消推送
+//    [HomeViewController cancelLocalNotificationWithKey:@"key"];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    }else{
+        NSLog(@"取消");
+    }
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
     return YES;
 }
 
