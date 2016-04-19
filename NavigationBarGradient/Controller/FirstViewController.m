@@ -91,16 +91,16 @@ static NSString * const cellID = @"cellID";
     self.mainTableView.tableFooterView = [[UIView alloc] init];
     self.mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
+    self.mainTableView.estimatedRowHeight = 70;
     [self.view addSubview:_mainTableView];
     
     self.topView = [[TopView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, headTop)];
     [self.view addSubview:_topView];
-    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

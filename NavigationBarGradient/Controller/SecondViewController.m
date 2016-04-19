@@ -43,24 +43,6 @@
  */
 - (void)addLocalNote {
     
-    /*
-     @property(nonatomic,copy) NSDate *fireDate;
-     @property(nonatomic,copy) NSTimeZone *timeZone;
-     @property(nonatomic) NSCalendarUnit repeatInterval;
-     @property(nonatomic,copy) NSCalendar *repeatCalendar;
-     @property(nonatomic,copy) CLRegion *region NS_AVAILABLE_IOS(8_0);
-     @property(nonatomic,assign) BOOL regionTriggersOnce NS_AVAILABLE_IOS(8_0);
-     
-     @property(nonatomic,copy) NSString *alertBody;
-     @property(nonatomic) BOOL hasAction;
-     @property(nonatomic,copy) NSString *alertAction;
-     @property(nonatomic,copy) NSString *alertLaunchImage;
-     @property(nonatomic,copy) NSString *soundName;      UILocalNotificationDefaultSoundName
-     @property(nonatomic) NSInteger applicationIconBadgeNumber;
-     
-     
-     @property(nonatomic,copy) NSDictionary *userInfo;
-     */
     // 1.创建一个本地通知
     UILocalNotification *localNote = [[UILocalNotification alloc] init];
     
@@ -90,11 +72,6 @@
     
     // 2.调度通知
     [[UIApplication sharedApplication] scheduleLocalNotification:localNote];
-    
-//    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
-    
-    
-    
 }
 
 - (void)registerLocalNotification
@@ -138,7 +115,7 @@
 
 - (void)removeLocalNote {
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
-    //    [UIApplication sharedApplication] cancelLocalNotification:(UILocalNotification *)
+
 }
 
 - (void)didReceiveMemoryWarning {
